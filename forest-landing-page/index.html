@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Forest Landing Page | Tribhuwansingh2023</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- TribhuwanSingh2023 -->
+<head>
+    <title>Parallax Scrolling Website</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Forest</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    
+    <Section>
+        <h2 id="text"><span>It's time for a new</span><br>Adventure</h2>
+        
+        <img src="https://user-images.githubusercontent.com/65358991/170092504-132fa547-5ced-40e5-ab64-ded61518fac2.png" id="bird1">
+        <img src="https://user-images.githubusercontent.com/65358991/170092542-9747edcc-fb51-4e21-aaf5-a61119393618.png" id="bird2">
+        <img src="https://user-images.githubusercontent.com/65358991/170092559-883fe071-eb4f-4610-8c8b-a037d061c617.png" id="forest">
+        
+        <a href="#" id="btn">Explore</a>
+        
+        <img src="https://user-images.githubusercontent.com/65358991/170092605-eada6510-d556-45cc-b7fa-9e4d1d258d26.png" id="rocks">
+        <img src="https://user-images.githubusercontent.com/65358991/170092616-5a70c4af-2eed-496f-bde9-b5fcc7142a31.png" id="water">
+    </Section>
+    
+    <div class="sec">
+        <h2>Explore the Great Outdoors</h2>
+    
+        <h3>The Majesty of Forests</h3>
+        <p>Forests are the lungs of our planet, home to countless species of plants and animals. Walking through a forest can be a transformative experience, allowing you to reconnect with nature and find solace in its quiet beauty. The canopy overhead filters sunlight, creating a mosaic of light and shadow on the forest floor, while the sounds of rustling leaves and chirping birds create a soothing symphony.</p>
+    
+        <h3>A Journey Through Seasons</h3>
+        <p>Nature’s beauty evolves with each season, offering unique experiences year-round.</p>
+        <ul >
+            <li><strong>Spring:</strong> Witness the burst of life as flowers bloom and animals emerge from hibernation. The air is filled with the sweet scent of blossoms, and vibrant colors paint the landscape.</li>
+            <li><strong>Summer:</strong> Enjoy the warmth of the sun and the vibrancy of lush greenery. Take a refreshing dip in a lake or enjoy a picnic under the shade of a tree.</li>
+            <li><strong>Autumn:</strong> Experience the breathtaking transformation as leaves change to brilliant shades of red, orange, and yellow. The crisp air invites you to explore trails covered in a carpet of fallen leaves.</li>
+            <li><strong>Winter:</strong> Embrace the tranquility of a snow-covered landscape. Activities like snowshoeing, skiing, and ice skating offer exhilarating ways to enjoy the serene beauty of winter.</li>
+        </ul>
+    
+        <h3>Wildlife Encounters</h3>
+        <p>Nature is a treasure trove of diverse wildlife. From majestic deer to playful squirrels, each encounter reminds us of the intricate web of life that exists in our environment. Join a guided wildlife tour or embark on a solo adventure to observe animals in their natural habitat. Remember to respect their space and appreciate the beauty of nature from a distance.</p>
+    
+        <h3>The Call of Adventure</h3>
+        <p>Adventure is not just about adrenaline; it’s about the journey and the connections we make along the way. Whether you’re climbing a mountain, kayaking through a river, or camping under the stars, every experience in nature can ignite your spirit of exploration. Create a bucket list of outdoor activities, and challenge yourself to step out of your comfort zone.</p>
+    
+        <h3>Conservation Matters</h3>
+        <p>As we enjoy nature, we must also protect it. Conservation efforts play a crucial role in maintaining the delicate balance of ecosystems. Consider volunteering for local conservation projects, participating in clean-up drives, or simply spreading awareness about environmental issues. Every small action contributes to a larger impact, ensuring that future generations can enjoy the wonders of nature.</p>
+    
+        <h3>Join Our Community</h3>
+        <p>Become part of a community that values nature and adventure. Share your stories, photos, and experiences with fellow nature enthusiasts. Join local hiking clubs, participate in workshops, and connect with like-minded individuals who share your passion for the outdoors. Together, we can inspire each other to explore, appreciate, and protect our beautiful planet.</p>
+    </div>
+    
+    
+    
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+        
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            
+            text.style.top = 50 + value * -.1 + '%';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * 2 + 'px';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -.12 + 'px';
+            forest.style.top = value * .25 + 'px';
+            header.style.top = value * .5 + 'px';
+        })
+    </script>
+    
+</body>
+<!-- TribhuwanSingh2023 -->
+  <script  src="./script.js"></script>
+  <footer>
+    <p style="font-size: 15px; text-align: center;">&copy; 2024 Tribhuwan Singh. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
